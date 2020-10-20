@@ -1,5 +1,16 @@
 /* Untuk diisi */
+html {
+    position: relative;
+}
 
+body {
+    margin-bottom: 100px;
+    margin-top: 30px;
+    color: #ff3333;
+    background-image: url(img/corona.jpg);
+    background-size: cover;
+    font-family: 'Sansita Swashed', cursive !important;
+}
 
 h1,
 h4,
@@ -7,6 +18,24 @@ small,
 p {
     animation-duration: 3s;
     animation-name: slidein;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+li a:hover {
+    background-color: #ff3333;
 }
 
 @keyframes slidein {
@@ -21,18 +50,9 @@ p {
     }
 }
 
-html {
-    position: relative;
-}
 
-body {
-    margin-bottom: 100px;
-    margin-top: 30px;
-    color: #ff3333;
-    background-image: url(img/corona.jpg);
-    background-size: cover;
 
-}
+
 
 ul {
     list-style-type: none;
@@ -45,22 +65,7 @@ ul {
 
 }
 
-li {
-    float: left;
-}
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-li a:hover {
-    background-color: #ff3333;
-}
 
 footer {
     position: absolute;
@@ -71,19 +76,23 @@ footer {
     padding-top: 5px;
     text-align: center;
     color: aliceblue;
+    
 }
 
 .container {
-    border: 15px solid#333;
+    border: 10px solid#333;
     padding: 50px;
     margin: 20px;
+    color: red;
 }
 
 .konten {
-    border: 15px solid#333;
+    border: 10px solid#333;
     padding: 50px;
     margin: 20px;
     bottom: 50px;
+    color: #ff3333;
+    margin-bottom: 100px;
 }
 
 header {
@@ -126,14 +135,28 @@ div.judul {
     padding: 20px;
 }
 
-@media screen and (min-width: 600px) {
+
+
+@media screen and (max-width: 600px) {
     div.judul {
-        font-size: 30px;
+        background-color: black;
     }
 }
 
 @media screen and (max-width: 600px) {
-    div.judul {
-        font-size: 15px;
+    div.konten {
+        background-color: black;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.jumbotron {
+    background-color:#443b3b !important;
 }
